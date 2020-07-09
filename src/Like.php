@@ -3,8 +3,9 @@
 namespace CarroPublic\Like;
 
 use Exception;
+use Illuminate\Database\Eloquent\Model;
 
-class Like
+class Like extends Model
 {
     protected $fillable = [
         'likeable_type',
