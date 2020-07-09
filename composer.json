@@ -1,0 +1,43 @@
+{
+    "name": "carropublic/like",
+    "description": "Likeable polymorph",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sithu Aung",
+            "email": "sithu.aung@carro.co",
+            "homepage": "https://carro.sg"
+        }
+    ],
+    "homepage": "https://github.com/carropublic/like",
+    "keywords": ["Laravel", "Like"],
+    "require": {
+        "illuminate/support": "~5|~6|~7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CarroPublic\\Like\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CarroPublic\\Like\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CarroPublic\\Like\\LikeServiceProvider"
+            ],
+            "aliases": {
+                "Like": "CarroPublic\\Like\\Facades\\Like"
+            }
+        }
+    }
+}
