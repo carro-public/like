@@ -2,6 +2,8 @@
 
 namespace CarroPublic\Like;
 
+use Exception;
+
 class Like
 {
     protected $fillable = [
